@@ -1,0 +1,35 @@
+crear la app:
+
+npm create next-app .
+
+y npm run dev, para ir al localhost:3000
+
+instalar tailwind:
+npm add tailwindcss postcss autoprefixer.
+
+en global.css dejar solo:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+hacer el .env con: en google cloud
+y en nextAuth.js, providers, google, sacas la uri http://localhost:3000/api/auth/callback/google
+GOOGLE_ID=
+GOOGLE_SECRET=
+
+instalar mongo:  npm install @auth/mongodb-adapter mongodb
+
+y hacer la carpeta lib, con mongodb.js y poner el texto de la pag https://authjs.dev/reference/adapter/mongodb
+tambien modificar el archivo [...nextauth.js]
+
+el .env tiene que quedar algo asi:
+GOOGLE_ID="651237786902-o0n2ro47sqjiuciu2ac8gnlclccb72gm.apps.googleusercontent.com"
+GOOGLE_SECRET="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"
+
+MONGODB_URI="mongodb+srv://eduardogastoncuevas:h1G3rqlNUWwfURks@cluster0.tip1u3b.mongodb.net/?retryWrites=true&w=majority"
+
+para loading: react spinners
+
+ReactSortable: para hacer drag and drop y poner que cosa quiero primero
+
+iconos de css: heroicons
